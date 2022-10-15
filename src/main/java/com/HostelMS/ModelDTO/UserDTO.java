@@ -1,9 +1,5 @@
 package com.HostelMS.ModelDTO;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -41,11 +37,11 @@ public class UserDTO {
 		@Pattern(regexp="[0-9]{9,}",message ="\nContact No should Atleast have 10 digits.")
 		private String userContact;
 
-		// Using Regular Expression
+		// Using Regular Expression 
 		// RegEx To Check Validation	
 		// Giving Condition to Set Unique Password
 		@NotNull
-		@Pattern(regexp="[a-zA-Z0-9@#]{6,}",message ="\nPassword must be AlphaNumeric and Atleast have 8 Characters.")
+		@Pattern(regexp="^(?=.*[a-z])(?=.*[A-Z])"+"(?=.*[0-9]).{8,}$",message ="\nPassword must be AlphaNumeric and Atleast have 8 Characters.(atleast 1 Upper Case, 1 Lower Case, 1 Number)")
 		private String userPassword;
 		private String userAddress;
 		private String userRole;

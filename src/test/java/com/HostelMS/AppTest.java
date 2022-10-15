@@ -58,11 +58,7 @@ public class AppTest{
 	@Test
 	@DisplayName("REGISTRATION TESTING")
 	void registrationTest() {
-		
-		
-				
-		
-		
+
 		// CREATING DAO OBJECT OF HOSTEL MS
 		HostelMSDao dao = new HostelMSDaoImpl();
 		// CREATING USER OBJECT THAT ALREADY EXIST IN DATABASE
@@ -82,18 +78,16 @@ public class AppTest{
 		b.setUserPassword("R123");
 		b.setUserContact("9876543219");
 		b.setUserAddress("Delhi");
-		
-				
 				
 				// Checking Validation to Set Unique UserName
 				// Checking Validation to Set Unique Password
 				// Checking Validation to Set Contact Number
 				Set<ConstraintViolation<UserDTO>> constraintViolations = validator.validate(a);
-
+				//POSITIVE TEST CASE
 				assertEquals(0, constraintViolations.size());
 				
 				Set<ConstraintViolation<UserDTO>> constraintViolations2 = validator.validate(b);
-
+				// NEGATIVE TEST CASE
 				assertEquals(1, constraintViolations2.size());
 		
 		

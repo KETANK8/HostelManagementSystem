@@ -42,7 +42,7 @@ public class adminDashboardImpl implements adminDashboard{
 		{
 		log.info("\nADMIN DASHBOARD");
 		// THESE ARE THE ALL ACTION ADMIN CAN PERFORM
-		log.info("\nPress 1  - All Rooms \nPress 2  - All Users \nPress 3  - Create Rooms \nPress 4  - Allot Room \nPress 5  - Room Status \nPress 6  - Fetch User Profile \nPress 7  - Set Due Fees Amount \nPress 8  - Pay Due Fees Amount \nPress 9  - Delete User \nPress 10 - Set User Role \nPress 11 - Vacant Room List \nPress 12 - Un Alloted User \nPress 13 - Log Out");
+		log.info("\nPress 1  - All Rooms \nPress 2  - All Users \nPress 3  - Create Rooms \nPress 4  - Allot Room \nPress 5  - Room Status \nPress 6  - Fetch User Profile \nPress 7  - Update Due Fees Amount \nPress 8  - Pay Due Fees Amount \nPress 9  - Delete User \nPress 10 - Set User Role \nPress 11 - Vacant Room List \nPress 12 - Un Alloted User \nPress 13 - Log Out");
 		choice = scan.nextInt();
 			switch(choice) {
 			
@@ -205,7 +205,7 @@ public class adminDashboardImpl implements adminDashboard{
 	@Override
 	public void generateRent() {
 		// TODO Auto-generated method stub
-		log.info("Enter Amount to Generate Rent");
+		log.info("Enter Amount to Update Rent");
 		int amount = scan.nextInt();
 		log.info("Enter User Id");
 		int uId = scan.nextInt();

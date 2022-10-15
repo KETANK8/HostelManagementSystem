@@ -5668,4 +5668,1316 @@ Press 1 - Register New Profile
 Press 2 - Profile Login 
 Press 3 - Exit 
 Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostel]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@32456db0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.HostelMS.App  - a Register successfully.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - must not be null
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostel]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5820070c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.HostelMS.App  - SanuKumar Register successfully.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostel]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@712ac7e6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] INFO  com.HostelMS.App  - SanuSanu Register successfully.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostel]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@45900b64] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.HostelMS.App  - MikaMIka Register successfully.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostel]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@712ac7e6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.HostelMS.App  - NigamSonu Register successfully.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+Contact No should Atleast have 10 digits.
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - REGISTRATION
+  [main] INFO  com.HostelMS.App  - Enter Your First Name : 
+  [main] INFO  com.HostelMS.App  - Enter Your Last Name : 
+  [main] INFO  com.HostelMS.App  - Create Unique Username
+  [main] INFO  com.HostelMS.App  - Create Password
+  [main] INFO  com.HostelMS.App  - Enter Contact number
+  [main] INFO  com.HostelMS.App  - Enter Your Address
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  com.HostelMS.App  - 
+UserName should Atleast have Five Characters.
+  [main] INFO  com.HostelMS.App  - 
+Password must be AlphaNumeric and Atleast have 8 Characters.
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Profile Login
+  [main] INFO  com.HostelMS.App  - Enter Your Username
+  [main] INFO  com.HostelMS.App  - Enter Your Password
+  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 5.6.11.Final
+  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hostel]
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {password=****, user=root}
+  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+  [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 6.0.13.Final
+  [main] INFO  org.hibernate.orm.connections.access  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@33eb6758] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+  [main] INFO  com.HostelMS.App  - 
+Login Successfull
+Welcome  Ketan Kumar
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 100	Room Name : Room	Room Type : Ac
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 101	Room Name : Room A	Room Type : Non - AC
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 102	Room Name : Room B	Room Type : Non - AC
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 105	Room Name : Room D	Room Type : Non - AC
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 106	Room Name : Room E	Room Type : Non - AC
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 108	Room Name : Room N	Room Type : Non - AC
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 109	Room Name : Room P	Room Type : Non - AC
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 2 	Name : Amitt Kumar 	Contact No : 9999999999 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 4 	Name : Ashish Sharma 	Contact No : 9878520123 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 5 	Name : abhisekh raj 	Contact No : 9876543218 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 6 	Name : Arun Kumar 	Contact No : 9876543210 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 8 	Name : ArunK KumarK 	Contact No : 9876543210 	Room : 101
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 12 	Name : Abhirath Sharma 	Contact No : 98785201234 	Room : 101
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 13 	Name : Mahan Rajan 	Contact No : 8520852013 	Room : 101
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 15 	Name : Mahan Raajana 	Contact No : 8520456123 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 18 	Name : Ketan Kumar 	Contact No : 8080808080 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 19 	Name : a a 	Contact No : a 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 20 	Name : Kumar Sanu 	Contact No : 0000000000 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 21 	Name : Kumar Sanu 	Contact No : 8520456321 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 22 	Name : Mika Singh 	Contact No : 8080808080 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 23 	Name : Sonu Nigam 	Contact No : 78978978902 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter Room Id : 
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 8 	Name : ArunK KumarK 	Contact : 9876543210
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 12 	Name : Abhirath Sharma 	Contact : 98785201234
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 13 	Name : Mahan Rajan 	Contact : 8520852013
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter User Id : 
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - User(userId=18, userName=KetanKKumar, firstName=Ketan, lastName=Kumar, userContact=8080808080, userPassword=12345678, userAddress=Delhi, userRole=student, userRent=0, userRoom=null)
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter Amount to Generate Rent
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter User Id
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter Amount to Generate Rent
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter User Id
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 10000 Amount Added 
+Your Revised Due Rent : 10000
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter Amount to Pay Rent
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter user Id
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+PAYMENT SUCCESSFULL 
+Amount Paid 100.Rs 
+Your Revised Due Rent Amount : 9900.Rs
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - Enter user Id to delete
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - deleted!...
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 2 	Name : Amitt Kumar 	Contact No : 9999999999 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 4 	Name : Ashish Sharma 	Contact No : 9878520123 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 5 	Name : abhisekh raj 	Contact No : 9876543218 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 6 	Name : Arun Kumar 	Contact No : 9876543210 	Room : 100
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 8 	Name : ArunK KumarK 	Contact No : 9876543210 	Room : 101
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 12 	Name : Abhirath Sharma 	Contact No : 98785201234 	Room : 101
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 13 	Name : Mahan Rajan 	Contact No : 8520852013 	Room : 101
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 15 	Name : Mahan Raajana 	Contact No : 8520456123 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 18 	Name : Ketan Kumar 	Contact No : 8080808080 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 20 	Name : Kumar Sanu 	Contact No : 0000000000 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 21 	Name : Kumar Sanu 	Contact No : 8520456321 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 22 	Name : Mika Singh 	Contact No : 8080808080 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 23 	Name : Sonu Nigam 	Contact No : 78978978902 	Room : null
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+VACANT ROOMS 
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 101	Room Name : Room A	Room Type : Non - AC	Available Bed : 1
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 102	Room Name : Room B	Room Type : Non - AC	Available Bed : 4
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 105	Room Name : Room D	Room Type : Non - AC	Available Bed : 4
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 106	Room Name : Room E	Room Type : Non - AC	Available Bed : 4
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 108	Room Name : Room N	Room Type : Non - AC	Available Bed : 4
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Room Id : 109	Room Name : Room P	Room Type : Non - AC	Available Bed : 4
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 1 	Name : Ketan Kumar	Contact No : 9876543210
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 15 	Name : Mahan Raajana	Contact No : 8520456123
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 17 	Name : Rahul Kumar	Contact No : 9876543210
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 18 	Name : Ketan Kumar	Contact No : 8080808080
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 20 	Name : Kumar Sanu	Contact No : 0000000000
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 21 	Name : Kumar Sanu	Contact No : 8520456321
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 22 	Name : Mika Singh	Contact No : 8080808080
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+User Id : 23 	Name : Sonu Nigam	Contact No : 78978978902
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+ADMIN DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+Press 1  - All Rooms 
+Press 2  - All Users 
+Press 3  - Create Rooms 
+Press 4  - Allot Room 
+Press 5  - Room Status 
+Press 6  - Fetch User Profile 
+Press 7  - Set Due Fees Amount 
+Press 8  - Pay Due Fees Amount 
+Press 9  - Delete User 
+Press 10 - Set User Role 
+Press 11 - Vacant Room List 
+Press 12 - Un Alloted User 
+Press 13 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.adminDashboardImpl  - 
+LOGGED OUT
+
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
+  [main] INFO  com.HostelMS.App  - Profile Login
+  [main] INFO  com.HostelMS.App  - Enter Your Username
+  [main] INFO  com.HostelMS.App  - Enter Your Password
+  [main] INFO  com.HostelMS.App  - 
+Login Successfull
+Welcome  Amitt Kumar
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+USER DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+Press 1 - View Your Room
+Press 2 - Due Amount 
+Press 3 - View  Your Profile
+Press 4 - Change Contact Number 
+Press 5 - Change password 
+Press 6 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - Hello Amitt Kumar
+Room number : 100
+Room Name : Room
+Room Type : Ac
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+USER DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+Press 1 - View Your Room
+Press 2 - Due Amount 
+Press 3 - View  Your Profile
+Press 4 - Change Contact Number 
+Press 5 - Change password 
+Press 6 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - Rent Due : 10000
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+USER DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+Press 1 - View Your Room
+Press 2 - Due Amount 
+Press 3 - View  Your Profile
+Press 4 - Change Contact Number 
+Press 5 - Change password 
+Press 6 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - User(userId=2, userName=AmitKKK, firstName=Amitt, lastName=Kumar, userContact=9999999999, userPassword=AK12345@, userAddress=Delhi, userRole=student, userRent=10000, userRoom=Room(roomId=100, roomName=Room, roomType=Ac))
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+USER DASHBOARD
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+Press 1 - View Your Room
+Press 2 - Due Amount 
+Press 3 - View  Your Profile
+Press 4 - Change Contact Number 
+Press 5 - Change password 
+Press 6 - Log Out
+  [main] INFO  com.HostelMS.serviceImpl.userDashboardImpl  - 
+LOGGED OUT
+
+  [main] INFO  com.HostelMS.App  - Hostel Management System
+  [main] INFO  com.HostelMS.App  - 
+Press 1 - Register New Profile 
+Press 2 - Profile Login 
+Press 3 - Exit 
+Enter Your Choice : 
   

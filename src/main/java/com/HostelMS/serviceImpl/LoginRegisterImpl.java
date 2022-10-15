@@ -22,6 +22,7 @@ import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
 import com.HostelMS.App;
+import com.HostelMS.ModelDTO.UserDTO;
 import com.HostelMS.dao.HostelMSDao;
 import com.HostelMS.daoImpl.HostelMSDaoImpl;
 import com.HostelMS.exception.GlobalException;
@@ -39,29 +40,32 @@ public class LoginRegisterImpl implements LoginRegister{
 	@Override
 	public void Register() throws GlobalException {
 		// TODO Auto-generated method stub
+		// CREATING DTO OBJECT
+		UserDTO ud = new UserDTO();
+		// CREATING USER ENTITY OBJECT
 		User u = new User();
 		log.info("REGISTRATION");
 		log.info("Enter Your First Name : ");
 		String fName = scan.next();
-		u.setFirstName(fName);
+		ud.setFirstName(fName);
 		log.info("Enter Your Last Name : ");
 		String lName = scan.next();
-		u.setLastName(lName);
+		ud.setLastName(lName);
 		log.info("Create Unique Username");
 		String uname=scan.next();
-		u.setUserName(uname);
+		ud.setUserName(uname);
 		log.info("Create Password");
 		String upwd=scan.next();
-		u.setUserPassword(upwd);
+		ud.setUserPassword(upwd);
 		log.info("Enter Contact number");
 		String uphone=scan.next();
-		u.setUserContact(uphone);
+		ud.setUserContact(uphone);
 		log.info("Enter Your Address");
 		String uaddress=scan.next();
-		u.setUserAddress(uaddress);
-		u.setUserRole("student");
-		u.setUserRoom(null);
-		u.setUserRent(0);
+		ud.setUserAddress(uaddress);
+		ud.setUserRole("student");
+		ud.setUserRoom(null);
+		ud.setUserRent(0);
 		
 		// CREATING VALIDATOR FACTORY OBJECT
 		ValidatorFactory validfac = Validation.buildDefaultValidatorFactory();
@@ -71,18 +75,29 @@ public class LoginRegisterImpl implements LoginRegister{
 		// Checking Validation to Set Unique UserName
 		// Checking Validation to Set Unique Password
 		// Checking Validation to Set Contact Number
-		Set<ConstraintViolation<User>> violations =	valid.validate(u);
+		Set<ConstraintViolation<UserDTO>> violations =	valid.validate(ud);
 		
 		// IF ANY VALIDATION IS FAILED 
 		// USER WILL NOT SAVED
 		// AN ERROR MESSAGE DISPLAY IN RESPECT OF VALIDATION THAT FAILED
 		if(violations.size()>0)
 		{
-			for(ConstraintViolation<User> violates : violations)
+			for(ConstraintViolation<UserDTO> violates : violations)
 				log.info (violates.getMessage());// SHOWING VALIDATION MESSAGE
 		}
 		else {
-			//saving the user details
+			// saving the user details
+			// IF DTO PASS THE VALIDATION CHECK
+			u.setFirstName(fName);
+			u.setLastName(lName);
+			u.setUserName(uname);
+			u.setUserAddress(uaddress);
+			u.setUserContact(uphone);
+			u.setUserPassword(upwd);
+			u.setUserRent(ud.getUserRent());
+			u.setUserRole(ud.getUserRole());
+			u.setUserRoom(ud.getUserRoom());
+			
 			int status=dao.Registration(u);
 			if(status==1) {
 				log.info(uname+" Register successfully.");
