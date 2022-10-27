@@ -1,4 +1,4 @@
-package com.hostelms.modeldto;
+package com.hostelms.modelDTO;
 
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
