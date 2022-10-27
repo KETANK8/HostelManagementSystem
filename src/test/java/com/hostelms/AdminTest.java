@@ -2,6 +2,7 @@ package com.hostelms;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import com.hostelms.config.HibernateUtil;
 import com.hostelms.dao.AdminDao;
@@ -16,9 +17,9 @@ import org.junit.jupiter.api.Test;
 
 public class AdminTest {
 
-	// TEST 1
+	// TEST 1.1
 	@Test
-	@DisplayName("CREATE ROOM TESTING")
+	@DisplayName("POSITIVE-CREATE ROOM TESTING")
 	void addRoomTest() {
 
 		// CREATING ADMIN DAO OBJECT
@@ -39,21 +40,36 @@ public class AdminTest {
 		a.setRoomType("AC");
 
 		assertAll(
-
 				// POSITIVE TEST CASE
 				// TESTING TO ADD NEW ROOM TO DATABASE
 				// EXPECTING POSITIVE RESULT TO ADD ROOM IN DATABASE
 				() -> assertEquals(1, dao.createRoom(a)),
+				// TESTING TO ADD A ROOM THAT ALREADY EXIST IN DATABASE
+				// EXPECTING MRTHOD TO THROW AN EXCEPTION
+				() -> assertThrows(GlobalException.class,()-> dao.createRoom(r)));
+	}
 
+	//Test 1.2
+	@Test
+	@DisplayName("NEGATIVE-CREATE ROOM TESTING")
+	void addRoomTest2() {
+		// CREATING ADMIN DAO OBJECT
+		AdminDao dao = new AdminDaoImpl();
+		// CREATING ROOM OBJECT
+		// NEW ROOM OBJECT
+		Room a = new Room();
+		a.setRoomId(116);
+		a.setRoomName("Room Q");
+		a.setRoomType("AC");
 				// NEGATIVE TEST CASE
 				// TESTING TO ADD A ROOM THAT ALREADY EXIST IN DATABASE
 				// EXPECTING MRTHOD TO THROW AN EXCEPTION
-				() -> assertEquals (1, dao.createRoom(r)));
+		assertEquals (1, dao.createRoom(a));
 	}
-
-	// TEST 2
+	
+	// TEST 2.1
 	@Test
-	@DisplayName("Allot Room Testing")
+	@DisplayName("Positive-Allot Room Testing")
 	void allotRoomTest() {
 
 		// CREATING ADMIN DAO OBJECT
@@ -69,13 +85,27 @@ public class AdminTest {
 				// TESTING TO ALLOT A ROOM BY GIVING WRONG ROOM ID
 				// GIVING WRONG USER ID IN METHOD
 				// EXPECTING METHOD TO THROW AN EXCEPTION
-				() -> assertEquals(1,dao.allotRoom(500, 500)));
+				() -> assertThrows(GlobalException.class,()->dao.allotRoom(500, 500)));
 
 	}
 
-	// TEST 3
+	// TEST 2.2
 	@Test
-	@DisplayName("DELETE USER TESTING")
+	@DisplayName("Negative-Allot Room Testing")
+	void allotRoomTest2() {
+		// CREATING ADMIN DAO OBJECT
+		AdminDao dao = new AdminDaoImpl();
+				// NEGATIVE TEST CASE
+				// TESTING TO ALLOT A ROOM BY GIVING WRONG ROOM ID
+				// GIVING WRONG USER ID IN METHOD
+				// EXPECTING METHOD TO RETURN 1 BUT ACTUALLY IT IS EXCEPTION 
+			assertEquals(1,dao.allotRoom(500, 500));
+
+	}
+	
+	// TEST 3.1
+	@Test
+	@DisplayName("POSITIVE-DELETE USER TESTING")
 	void deleteUserTest() {
 
 		// CREATING ADMIN DAO OBJECT
@@ -92,12 +122,27 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING TO DELETE AN USER WHOSE USER ID DOES NOT EXIST IN DATABASE
 				// EXPECTING METHOD TO THROW AN EXCEPTION
-				() -> assertEquals (1,dao.deleteUser(500)));
+				() -> assertThrows (GlobalException.class,()->dao.deleteUser(500)));
+	}
+	
+	// TEST 3.2
+	@Test
+	@DisplayName("NEGATIVE-DELETE USER TESTING")
+	void deleteUserTest2() {
+
+		// CREATING ADMIN DAO OBJECT
+		AdminDao dao = new AdminDaoImpl();
+
+				// NEGATIVE TEST CASE
+				// TESTING TO DELETE AN USER WHOSE USER ID DOES NOT EXIST IN DATABASE
+				// EXPECTING METHOD TO RETURN 1 BUT ACTUALLY IT IS EXCEPTION
+				assertEquals (1,dao.deleteUser(500));
 	}
 
-	// TEST 4
+	
+	// TEST 4.1
 	@Test
-	@DisplayName("SET RENT TESTING")
+	@DisplayName("POSITIVE-SET RENT TESTING")
 	void setRentTest() {
 
 		// CREATING ADMIN DAO OBJECT
@@ -112,12 +157,24 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING TO UPDATE RENT WITH 6000 FOR INCORRECT USER ID
 				// EXPECTING METHOD TO THROW AN EXCEPTION
-				() -> assertEquals(1,dao.generateRent(500, 6000)));
+				() -> assertThrows(GlobalException.class,()->dao.generateRent(500, 6000)));
 	}
-
-	// TEST 5
+	// TEST 4.2
 	@Test
-	@DisplayName("RENT PAYMENT TESTING")
+	@DisplayName("NEGATIVE-SET RENT TESTING")
+	void setRentTest2() {
+
+		// CREATING ADMIN DAO OBJECT
+		AdminDao dao = new AdminDaoImpl();
+
+				// NEGATIVE TEST CASE
+				// TESTING TO UPDATE RENT WITH 6000 FOR INCORRECT USER ID
+				// EXPECTING METHOD TO THROW AN EXCEPTION
+				assertEquals(1,dao.generateRent(500, 6000));
+	}
+	// TEST 5.1
+	@Test
+	@DisplayName("POSITIVE-RENT PAYMENT TESTING")
 	void payRentTest() {
 
 		AdminDao dao = new AdminDaoImpl();
@@ -131,12 +188,23 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING FOR INCORRECT USER ID
 				// EXCEPTING METHOD TO THROW AN EXCEPTION
-				() -> assertEquals(1,dao.rentPayment(500, 1000)));
+				() -> assertThrows(GlobalException.class,()->dao.rentPayment(500, 1000)));
+	}
+	// TEST 5.2
+	@Test
+	@DisplayName("NEGATIVE-RENT PAYMENT TESTING")
+	void payRentTest2() {
+
+		AdminDao dao = new AdminDaoImpl();
+				// NEGATIVE TEST CASE
+				// TESTING FOR INCORRECT USER ID
+				// EXCEPTING METHOD TO THROW AN EXCEPTION
+				assertEquals(1,dao.rentPayment(500, 1000));
 	}
 
-	// TEST 6
+	// TEST 6.1
 	@Test
-	@DisplayName("FETCH USER TESTING")
+	@DisplayName("POSITIVE-FETCH USER TESTING")
 	void viewUserTest() throws GlobalException {
 
 		// CREATING ADMIN DAO OBJECT
@@ -147,18 +215,33 @@ public class AdminTest {
 		User u = ses.get(User.class, 1);
 		// FETCHING SAME USER USING FETCH USER PROFILE
 		User u1 = dao.fetchUserProfile(1);
-		// FETCHING Different USER USING FETCH USER PROFILE METHOD
-		User u2 = dao.fetchUserProfile(2);
-		assertAll(
+		
 
 				// POSTIVE TEST CASE
 				// TESTING TO COMPARE BOTH USER THAT WE FETCHED EARLIER
 				// EXPECTING THAT BOTH ARE EQUAL/SAME
-				() -> assertEquals(u.toString(), u1.toString()),
+				assertEquals(u.toString(), u1.toString());
+
+	}
+
+	// TEST 6.2
+	@Test
+	@DisplayName("NEGATIVE-FETCH USER TESTING")
+	void viewUserTest2() throws GlobalException {
+
+		// CREATING ADMIN DAO OBJECT
+		AdminDao dao = new AdminDaoImpl();
+		// CREATING SESSSION OBJECT
+		Session ses = HibernateUtil.getSession();
+		// FETCHING USER DETAIL USING SESSION OBJECT
+		User u = ses.get(User.class, 1);
+		// FETCHING Different USER USING FETCH USER PROFILE METHOD
+		User u2 = dao.fetchUserProfile(2);
 
 				// NEGATIVE TEST CASE
 				// TESTING FETCH USER PROFILE METHOD FOR INCORRECT USER ID
 				// EXCEPTING METHOD TO THROW AN EXCEPTION
-				() -> assertEquals(u.toString(), u2.toString()));
-	}
+				assertEquals(u.toString(), u2.toString());
+	
+}
 }

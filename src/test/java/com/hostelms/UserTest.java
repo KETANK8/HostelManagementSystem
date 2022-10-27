@@ -2,18 +2,20 @@ package com.hostelms;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import com.hostelms.dao.UserDao;
 import com.hostelms.daoImpl.UserDaoImpl;
+import com.hostelms.exception.GlobalException;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class UserTest {
 
-	// TEST 1
+	// TEST 1.1
 	@Test
-	@DisplayName("DUE RENT TESTING")
+	@DisplayName("POSITIVE-DUE RENT TESTING")
 	void dueAmountTest() {
 
 		// CREATING USER DAO METHOD
@@ -28,12 +30,24 @@ public class UserTest {
 				// NEGATIVE TEST CASE
 				// TESTING USER DUE AMOUNT METHOD FOR WRONG USER ID
 				
-				() -> assertEquals(10000, dao.userDueAmount(500)));
+				() -> assertThrows(GlobalException.class,()-> dao.userDueAmount(500)));
 	}
+	// TEST 1.2
+		@Test
+		@DisplayName("NEGATIVE-DUE RENT TESTING")
+		void dueAmountTest2() {
 
-	// TEST 2
+			// CREATING USER DAO METHOD
+			UserDao dao = new UserDaoImpl();
+
+					// NEGATIVE TEST CASE
+					// TESTING USER DUE AMOUNT METHOD FOR WRONG USER ID
+					assertEquals(10000, dao.userDueAmount(500));
+		}
+
+	// TEST 2.1
 	@Test
-	@DisplayName("CHANGE CONTACT TESTING")
+	@DisplayName("POSITIVE-CHANGE CONTACT TESTING")
 	void changeContactTest() {
 
 		// CREATING USER DAO METHOD
@@ -48,12 +62,25 @@ public class UserTest {
 				// NEGATIVE TEST CASE
 				// TESTING CHANGE CONTACT METHOD FOR WRONG USER ID
 				
-				() -> assertEquals(1, dao.changeContact(500, "9999999999")));
+				() -> assertThrows(GlobalException.class,()-> dao.changeContact(500, "9999999999")));
+	}
+	
+	// TEST 2.2
+	@Test
+	@DisplayName("NEGATIVE-CHANGE CONTACT TESTING")
+	void changeContactTest2() {
+
+		// CREATING USER DAO METHOD
+		UserDao dao = new UserDaoImpl();
+				// NEGATIVE TEST CASE
+				// TESTING CHANGE CONTACT METHOD FOR WRONG USER ID
+				assertEquals(1, dao.changeContact(500, "9999999999"));
 	}
 
-	// TEST 3
+
+	// TEST 3.1
 	@Test
-	@DisplayName("CHANGE PASSWORD TESTING")
+	@DisplayName("POSITIVE-CHANGE PASSWORD TESTING")
 	void cahngePasswordTest() {
 
 		UserDao dao = new UserDaoImpl();
@@ -67,7 +94,21 @@ public class UserTest {
 				// NEGATIVE TEST CASE
 				// TESTING TO CHANGE PASSWORD OF A USER THAT NOT EXIST IN DATABASE
 				
-				() -> assertEquals (1, dao.changePassWord(4, "amit1234", "AK12345@")));
+				() -> assertThrows (GlobalException.class,()->dao.changePassWord(4, "amit1234", "AK12345@")));
+		
 	}
 
+	// TEST 3.2
+	@Test
+	@DisplayName("NEGATIVE-CHANGE PASSWORD TESTING")
+	void cahngePasswordTest2() {
+
+		UserDao dao = new UserDaoImpl();
+
+
+				// NEGATIVE TEST CASE
+				// TESTING TO CHANGE PASSWORD OF A USER THAT NOT EXIST IN DATABASE
+				
+				assertEquals (1, dao.changePassWord(4, "amit1234", "AK12345@"));
+	}
 }
