@@ -83,8 +83,7 @@ public class AdminDaoImpl implements AdminDao {
 
 			// FETCHING LIST OF ALL USER
 			// USER THAT ALREADY HAVE ROOM ACCESS OF GIVEN ROOM ID
-			List<User> userList = ses.createQuery("from User where userRoom_roomId =: id ").setParameter("id", rId)
-					.getResultList();
+			List<User> userList = ses.createQuery("from User where userRoom_roomId =: id ").setParameter("id", rId).getResultList();
 
 			// COUNTING NO OF USER HAVE GIVEN ROOM ACCESS
 			for (User u : userList)

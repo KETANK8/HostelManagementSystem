@@ -2,7 +2,6 @@ package com.hostelms;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import com.hostelms.config.HibernateUtil;
 import com.hostelms.dao.AdminDao;
@@ -49,7 +48,7 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING TO ADD A ROOM THAT ALREADY EXIST IN DATABASE
 				// EXPECTING MRTHOD TO THROW AN EXCEPTION
-				() -> assertThrows(GlobalException.class, () -> dao.createRoom(r)));
+				() -> assertEquals (1, dao.createRoom(r)));
 	}
 
 	// TEST 2
@@ -70,7 +69,7 @@ public class AdminTest {
 				// TESTING TO ALLOT A ROOM BY GIVING WRONG ROOM ID
 				// GIVING WRONG USER ID IN METHOD
 				// EXPECTING METHOD TO THROW AN EXCEPTION
-				() -> assertThrows(GlobalException.class, () -> dao.allotRoom(500, 500)));
+				() -> assertEquals(1,dao.allotRoom(500, 500)));
 
 	}
 
@@ -93,7 +92,7 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING TO DELETE AN USER WHOSE USER ID DOES NOT EXIST IN DATABASE
 				// EXPECTING METHOD TO THROW AN EXCEPTION
-				() -> assertThrows(GlobalException.class, () -> dao.deleteUser(500)));
+				() -> assertEquals (1,dao.deleteUser(500)));
 	}
 
 	// TEST 4
@@ -113,7 +112,7 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING TO UPDATE RENT WITH 6000 FOR INCORRECT USER ID
 				// EXPECTING METHOD TO THROW AN EXCEPTION
-				() -> assertThrows(GlobalException.class, () -> dao.generateRent(500, 6000)));
+				() -> assertEquals(1,dao.generateRent(500, 6000)));
 	}
 
 	// TEST 5
@@ -132,7 +131,7 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING FOR INCORRECT USER ID
 				// EXCEPTING METHOD TO THROW AN EXCEPTION
-				() -> assertThrows(GlobalException.class, () -> dao.rentPayment(500, 1000)));
+				() -> assertEquals(1,dao.rentPayment(500, 1000)));
 	}
 
 	// TEST 6
@@ -146,8 +145,10 @@ public class AdminTest {
 		Session ses = HibernateUtil.getSession();
 		// FETCHING USER DETAIL USING SESSION OBJECT
 		User u = ses.get(User.class, 1);
-		// FETCHING SAME USER USING FETCH USER PROFILR METHOD
+		// FETCHING SAME USER USING FETCH USER PROFILE
 		User u1 = dao.fetchUserProfile(1);
+		// FETCHING Different USER USING FETCH USER PROFILE METHOD
+		User u2 = dao.fetchUserProfile(2);
 		assertAll(
 
 				// POSTIVE TEST CASE
@@ -158,6 +159,6 @@ public class AdminTest {
 				// NEGATIVE TEST CASE
 				// TESTING FETCH USER PROFILE METHOD FOR INCORRECT USER ID
 				// EXCEPTING METHOD TO THROW AN EXCEPTION
-				() -> assertThrows(GlobalException.class, () -> dao.fetchUserProfile(500)));
+				() -> assertEquals(u.toString(), u2.toString()));
 	}
 }
