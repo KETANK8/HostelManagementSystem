@@ -25,10 +25,11 @@ import com.hostelms.dao.HostelMSDao;
 import com.hostelms.daoImpl.HostelMSDaoImpl;
 import com.hostelms.exception.GlobalException;
 import com.hostelms.model.User;
-import com.hostelms.modelDTO.UserDTO;
+import com.hostelms.modeldto.UserDTO;
 
 import org.hibernate.Session;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -49,6 +50,7 @@ public class LoginRegTest {
 
 	// TEST 1.1
 	@Test
+	// @Disabled
 	@DisplayName("POSITIVE-REGISTRATION TESTING")
 	void registrationTest() {
 
@@ -57,7 +59,7 @@ public class LoginRegTest {
 		a.setFirstName("Rohit");
 		a.setLastName("Sharma");
 		a.setUserName("RohitSharma");
-		a.setUserPassword("R12345@");
+		a.setUserPassword("RK12345@");
 		a.setUserContact("9876543219");
 		a.setUserAddress("Delhi");
 
@@ -68,33 +70,36 @@ public class LoginRegTest {
 		// POSITIVE TEST CASE
 		assertEquals(0, constraintViolations.size());
 
+	}
+
+	// TEST 1.2
+	@Test
+	@Disabled
+	@DisplayName("NEGATIVE-REGISTRATION TESTING")
+	void registrationTest2() {
+
+		// CREATING NEW USER OBJECT
+		UserDTO b = new UserDTO();
+		b.setFirstName("Rohit");
+		b.setLastName("Sharma");
+		b.setUserName("RS");
+		b.setUserPassword("R123");
+		b.setUserContact("9876543219");
+		b.setUserAddress("Delhi");
+
+		// Checking Validation to Set Unique UserName
+		// Checking Validation to Set Unique Password
+		// Checking Validation to Set Contact Number
+
+		Set<ConstraintViolation<UserDTO>> constraintViolations2 = validator.validate(b);
+		// NEGATIVE TEST CASE
+		assertEquals(0, constraintViolations2.size());
 
 	}
-	// TEST 1.2
-		@Test
-		@DisplayName("NEGATIVE-REGISTRATION TESTING")
-		void registrationTest2() {
 
-			// CREATING NEW USER OBJECT
-			UserDTO b = new UserDTO();
-			b.setFirstName("Rohit");
-			b.setLastName("Sharma");
-			b.setUserName("RS");
-			b.setUserPassword("R123");
-			b.setUserContact("9876543219");
-			b.setUserAddress("Delhi");
-
-			// Checking Validation to Set Unique UserName
-			// Checking Validation to Set Unique Password
-			// Checking Validation to Set Contact Number
-
-			Set<ConstraintViolation<UserDTO>> constraintViolations2 = validator.validate(b);
-			// NEGATIVE TEST CASE
-			assertEquals(0, constraintViolations2.size());
-
-		}
 	// TEST 2.1
 	@Test
+	// @Disabled
 	@DisplayName("POSITIVE-LOGIN TESTING")
 	void loginTest() throws GlobalException {
 
@@ -111,34 +116,35 @@ public class LoginRegTest {
 		// FETCHING SAME USER FROM DATABASE USING DAO OBJECT AND PRIMARY KEY
 		User a = dao.Login("KetanK", "K12345@");
 
-				// POSITIVE TEST CASE
-				// TESTING TO COMPARE IF BOTH USER OBJECT IS SAME
-				// EXPECTING SAME RESULT
-				assertEquals(u.toString(), a.toString());
-	}	
+		// POSITIVE TEST CASE
+		// TESTING TO COMPARE IF BOTH USER OBJECT IS SAME
+		// EXPECTING SAME RESULT
+		assertEquals(u.toString(), a.toString());
+	}
+
 	// TEST 2
-		@Test
-		@DisplayName("NEGATIVE-LOGIN TESTING")
-		void loginTest2() throws GlobalException {
+	@Test
+	@Disabled
+	@DisplayName("NEGATIVE-LOGIN TESTING")
+	void loginTest2() throws GlobalException {
 
-			// CREATING DAO OBJECT OF HOSTEL MS
-			HostelMSDao dao = new HostelMSDaoImpl();
+		// CREATING DAO OBJECT OF HOSTEL MS
+		HostelMSDao dao = new HostelMSDaoImpl();
 
-			// CREAYTING SESSION OBJECT
-			Session ses = HibernateUtil.getSession();
+		// CREAYTING SESSION OBJECT
+		Session ses = HibernateUtil.getSession();
 
-			// CREATING TWO USER OBJECT
-			// FETCHING USER FROM DATA USING SESSION OBJECT
-			User u = ses.get(User.class, 1);
+		// CREATING TWO USER OBJECT
+		// FETCHING USER FROM DATA USING SESSION OBJECT
+		User u = ses.get(User.class, 1);
 
-			//FETCHING SAME USER WITH WRONG ENTRY OF DATA
-			User b =  dao.Login("KetanKumar", "K123456");
+		// FETCHING SAME USER WITH WRONG ENTRY OF DATA
+		User b = dao.Login("KetanKumar", "K123456");
 
-			
-					// NEGATIVE TEST CASE
-					// TESTING TO LOGIN USING WRONG USERNAME AND PASSWORD IN LOGIN METHOD
-					// EXPECTING METHOD TO THROW AN EXCEPTION
-					assertEquals(u.toString(), b.toString());
-		}
-	
+		// NEGATIVE TEST CASE
+		// TESTING TO LOGIN USING WRONG USERNAME AND PASSWORD IN LOGIN METHOD
+		// EXPECTING METHOD TO THROW AN EXCEPTION
+		assertEquals(u.toString(), b.toString());
+	}
+
 }

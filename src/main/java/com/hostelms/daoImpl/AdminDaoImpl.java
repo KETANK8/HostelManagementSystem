@@ -52,7 +52,7 @@ public class AdminDaoImpl implements AdminDao {
 			if (r2 == null) {
 				ses.save(r);
 				ses.getTransaction().commit(); // ADDING ROOM INTO DATABASE
-
+				return 1;
 			} else {
 
 				// THROWS EXCEPTION IF GIVEN ROOM NAME IS ALREADY EXIST IN DATABASE
@@ -63,7 +63,7 @@ public class AdminDaoImpl implements AdminDao {
 			// TODO Auto-generated catch block
 			log.info(e.getMessage());
 		}
-		return 1;
+		return 0;
 	}
 
 	// METHOD 2
@@ -83,7 +83,8 @@ public class AdminDaoImpl implements AdminDao {
 
 			// FETCHING LIST OF ALL USER
 			// USER THAT ALREADY HAVE ROOM ACCESS OF GIVEN ROOM ID
-			List<User> userList = ses.createQuery("from User where userRoom_roomId =: id ").setParameter("id", rId).getResultList();
+			List<User> userList = ses.createQuery("from User where userRoom_roomId =: id ").setParameter("id", rId)
+					.getResultList();
 
 			// COUNTING NO OF USER HAVE GIVEN ROOM ACCESS
 			for (User u : userList)
