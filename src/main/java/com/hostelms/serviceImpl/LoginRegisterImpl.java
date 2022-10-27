@@ -16,12 +16,13 @@ package com.hostelms.serviceImpl;
 
 import java.util.Scanner;
 import java.util.Set;
+
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 
-import com.hostelms.App;
+import com.hostelms.Hostel;
 import com.hostelms.dao.HostelMSDao;
 import com.hostelms.daoImpl.HostelMSDaoImpl;
 import com.hostelms.exception.GlobalException;
@@ -31,12 +32,13 @@ import com.hostelms.service.LoginRegister;
 
 import org.apache.log4j.Logger;
 
-public class LoginRegisterImpl implements LoginRegister{
+public class LoginRegisterImpl implements LoginRegister {
 
-	static Logger log = Logger.getLogger(App.class);
+	// getting logger in LoginRegisterImpl class
+	static Logger log = Logger.getLogger(Hostel.class);
 	static Scanner scan = new Scanner(System.in);
 	static HostelMSDao dao = new HostelMSDaoImpl();
-	
+
 	@Override
 	public void Register() throws GlobalException {
 		// TODO Auto-generated method stub
@@ -52,40 +54,38 @@ public class LoginRegisterImpl implements LoginRegister{
 		String lName = scan.next();
 		ud.setLastName(lName);
 		log.info("Create Unique Username");
-		String uname=scan.next();
+		String uname = scan.next();
 		ud.setUserName(uname);
 		log.info("Create Password");
-		String upwd=scan.next();
+		String upwd = scan.next();
 		ud.setUserPassword(upwd);
 		log.info("Enter Contact number");
-		String uphone=scan.next();
+		String uphone = scan.next();
 		ud.setUserContact(uphone);
 		log.info("Enter Your Address");
-		String uaddress=scan.next();
+		String uaddress = scan.next();
 		ud.setUserAddress(uaddress);
 		ud.setUserRole("student");
 		ud.setUserRoom(null);
 		ud.setUserRent(0);
-		
+
 		// CREATING VALIDATOR FACTORY OBJECT
 		ValidatorFactory validfac = Validation.buildDefaultValidatorFactory();
 		// CREATING VALIDATOR TO CHECK VALIDATION
 		Validator valid = validfac.getValidator();
-		
+
 		// Checking Validation to Set Unique UserName
 		// Checking Validation to Set Unique Password
 		// Checking Validation to Set Contact Number
-		Set<ConstraintViolation<UserDTO>> violations =	valid.validate(ud);
-		
-		// IF ANY VALIDATION IS FAILED 
+		Set<ConstraintViolation<UserDTO>> violations = valid.validate(ud);
+
+		// IF ANY VALIDATION IS FAILED
 		// USER WILL NOT SAVED
 		// AN ERROR MESSAGE DISPLAY IN RESPECT OF VALIDATION THAT FAILED
-		if(violations.size()>0)
-		{
-			for(ConstraintViolation<UserDTO> violates : violations)
-				log.info (violates.getMessage());// SHOWING VALIDATION MESSAGE
-		}
-		else {
+		if (violations.size() > 0) {
+			for (ConstraintViolation<UserDTO> violates : violations)
+				log.info(violates.getMessage());// SHOWING VALIDATION MESSAGE
+		} else {
 			// saving the user details
 			// IF DTO PASS THE VALIDATION CHECK
 			u.setFirstName(fName);
@@ -97,17 +97,15 @@ public class LoginRegisterImpl implements LoginRegister{
 			u.setUserRent(ud.getUserRent());
 			u.setUserRole(ud.getUserRole());
 			u.setUserRoom(ud.getUserRoom());
-			
-			int status=dao.Registration(u);
-			if(status==1) {
-				log.info(uname+" Register successfully.");
-			}
-			else {
+
+			int status = dao.Registration(u);
+			if (status == 1) {
+				log.info(uname + " Register successfully.");
+			} else {
 				throw new GlobalException("Something went wrong");
 			}
 		}
-		
-		
+
 	}
 
 	@Override
@@ -115,32 +113,27 @@ public class LoginRegisterImpl implements LoginRegister{
 		// TODO Auto-generated method stub
 		log.info("Profile Login");
 		log.info("Enter Your Username");
-		String username=scan.next();
+		String username = scan.next();
 		log.info("Enter Your Password");
-		String password=scan.next();
+		String password = scan.next();
 		User u = null;
-		try {
-			u = dao.Login(username, password);
-			log.info("\nLogin Successfull"+"\nWelcome  "+u.getFirstName()+" "+u.getLastName());
-			
+		u = dao.Login(username, password);
+		if (u != null) {
+			log.info("\nLogin Successfull" + "\nWelcome  " + u.getFirstName() + " " + u.getLastName());
+
 			// CREATING OBJECT OF ADMIN AND USER DASHBOARD
-			adminDashboardImpl adimpl = new adminDashboardImpl();
-			userDashboardImpl udimpl=new userDashboardImpl();
-			
-			// CALLING ADMIN OR USER DASHBOARD 
+			AdminDashboardImpl adimpl = new AdminDashboardImpl();
+			UserDashboardImpl udimpl = new UserDashboardImpl();
+
+			// CALLING ADMIN OR USER DASHBOARD
 			// BASED ON USER ROLE
 			// IF USER ROLE IS ADMIN THEN ONLY ADMIN DASHBOARD IS CALLED
-			if(u.getUserRole().equals("admin")) {
+			if (u.getUserRole().equals("admin")) {
 				adimpl.dashboard();
-			}
-			else {
+			} else {
 				udimpl.dashboard(u.getUserId());
 			}
-		} catch (GlobalException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
-		
 
-	}	
+	}
 }

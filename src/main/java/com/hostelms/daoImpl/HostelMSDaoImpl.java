@@ -19,55 +19,61 @@ import com.hostelms.dao.HostelMSDao;
 import com.hostelms.exception.GlobalException;
 import com.hostelms.model.User;
 
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
-public class HostelMSDaoImpl implements HostelMSDao{
+public class HostelMSDaoImpl implements HostelMSDao {
+
+	// getting logger in HostelMSDaoImpl class
+	static Logger log = Logger.getLogger(HostelMSDaoImpl.class);
 
 	@Override
-	public int Registration(User u) throws GlobalException {
+	public int Registration(User u) {
 		// TODO Auto-generated method stub
-			try(Session ses=HibernateUtil.getSession())
-			{
-				
-				String name = u.getUserName();
-				User u2=null;
-				u2= (User) ses.createQuery("from User where userName =: Name").setParameter("Name", name).uniqueResult();
-				if(u2==null)
-				{
-					ses.beginTransaction();
-					ses.save(u);
-					ses.getTransaction().commit();
-					return 1;	
-				}
-				else {
-					throw new GlobalException("User Name alreay taken!!!");
-				}
-				
+		try (Session ses = HibernateUtil.getSession()) {
+
+			String name = u.getUserName();
+			User u2 = null;
+			u2 = (User) ses.createQuery("from User where userName =: Name").setParameter("Name", name).uniqueResult();
+			if (u2 == null) {
+				ses.beginTransaction();
+				ses.save(u);
+				ses.getTransaction().commit();
+			} else {
+				throw new GlobalException("User Name alreay taken!!!");
 			}
+
+		} catch (GlobalException e) {
+			// TODO Auto-generated catch block
+			log.info(e.getMessage());
+		}
+		return 1;
 	}
 
 	@Override
-	public User Login(String UserName, String password) throws GlobalException {
+	public User Login(String UserName, String password) {
 		// TODO Auto-generated method stub
-		try(Session ses=HibernateUtil.getSession()){
+		User u = null;
+		try (Session ses = HibernateUtil.getSession()) {
 			ses.beginTransaction();
-			
-			User u2=null;
-			u2=(User)ses.createQuery("from User where userName=:username").setParameter("username", UserName).uniqueResult();
-			if(u2!=null)
-			{
-				if(u2.getUserPassword().equals(password)) {
+
+			User u2 = (User) ses.createQuery("from User where userName=:username").setParameter("username", UserName)
+					.uniqueResult();
+			if (u2 != null) {
+				if (u2.getUserPassword().equals(password)) {
 					return u2;
-				}
-				else {
+				} else {
 					throw new GlobalException("Wrong Username or Password!!!");
 				}
-			}
-			else {
+			} else {
 				throw new GlobalException("User does not exist!!!");
 			}
-			
+
+		} catch (GlobalException e) {
+			// TODO Auto-generated catch block
+			log.info(e.getMessage());
 		}
+		return u;
 	}
 
 }

@@ -1,19 +1,30 @@
 package com.hostelms.service;
 
+public interface AdminDashboard {
 
-public interface adminDashboard {
+	void dashboard();
 
-	public void dashboard();
-	public void fetchAllRooms();
-	public void fetchAllUsers();
-	public void createRoom();
-	public void allotRoom();
-	public void deleteUser();
-	public void userInARoom();
-	public void generateRent();
-	public void rentPayment();
-	public void setUserRole();
-	public void viewUserProfile();
-	public void vaccantRoom();
-	public void unAllotedUser();
+	void fetchAllRooms();
+
+	void fetchAllUsers();
+
+	void createRoom();
+
+	void allotRoom();
+
+	void deleteUser();
+
+	void userInARoom();
+
+	void generateRent();
+
+	void rentPayment();
+
+	void setUserRole();
+
+	void viewUserProfile();
+
+	void vaccantRoom();
+
+	void unAllotedUser();
 }

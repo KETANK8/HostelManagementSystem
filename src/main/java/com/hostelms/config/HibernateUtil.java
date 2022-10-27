@@ -34,9 +34,9 @@ public class HibernateUtil {
 				pro.put(Environment.URL, "jdbc:mysql://localhost:3306/hostel"); // connecting with database
 				pro.put(Environment.USER, "root"); // user name of mysql server
 				pro.put(Environment.PASS, "142307"); // password of mysql server
-				pro.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect"); // setting mysql dialect
-				pro.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread"); // checking the session by no of execution
-																				// of threads
+				pro.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect"); // setting mysql dialect
+				pro.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread"); // checking the session by thread of
+																				// execution
 				pro.put(Environment.HBM2DDL_AUTO, "update"); // creating or updating the table if already exist
 				pro.put(Environment.SHOW_SQL, "false"); // by indicating false we are not going to show sql process in
 														// our console

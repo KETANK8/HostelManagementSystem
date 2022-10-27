@@ -19,9 +19,13 @@ import com.hostelms.dao.UserDao;
 import com.hostelms.exception.GlobalException;
 import com.hostelms.model.User;
 
+import org.apache.log4j.Logger;
 import org.hibernate.Session;
 
 public class UserDaoImpl implements UserDao {
+
+	// getting logger in UserDaoImpl class
+	static Logger log = Logger.getLogger(UserDaoImpl.class);
 
 	// METHOD 1
 	// TO SHOW ROOM DETAILS OF USER
@@ -38,17 +42,22 @@ public class UserDaoImpl implements UserDao {
 	// METHOD 2
 	// TO SHOW DUE AMOUNT OF USER
 	@Override
-	public int userDueAmount(int uId) throws GlobalException {
+	public int userDueAmount(int uId) {
 		// TODO Auto-generated method stub
+		int amount = 0;
 		try (Session ses = HibernateUtil.getSession()) {
 			User u = ses.get(User.class, uId);
 			if (u == null) {
 				throw new GlobalException("User Does not Exist");
 			}
-			int amount = (int) ses.createQuery("select userRent from User where userId =: id").setParameter("id", uId)
+			amount = (int) ses.createQuery("select userRent from User where userId =: id").setParameter("id", uId)
 					.uniqueResult();// FETCHING AMOUNT DETAILS
-			return amount;
+
+		} catch (GlobalException e) {
+			// TODO Auto-generated catch block
+			log.info(e.getMessage());
 		}
+		return amount;
 	}
 
 	// METHOD 3
@@ -66,8 +75,9 @@ public class UserDaoImpl implements UserDao {
 	// METHOD 4
 	// TO CHANGE CONTACT INFO OF USER
 	@Override
-	public int changeContact(int uId, String newContact) throws GlobalException {
+	public int changeContact(int uId, String newContact) {
 		// TODO Auto-generated method stub
+		int res = 0;
 		try (Session ses = HibernateUtil.getSession()) {
 			ses.beginTransaction();
 			User u = ses.get(User.class, uId);
@@ -75,18 +85,23 @@ public class UserDaoImpl implements UserDao {
 				throw new GlobalException("User Does not Exist");
 			}
 			// UPDATING CONTACT INFO
-			int res = ses.createQuery("update User set userContact =: contact where userId =: id")
+			res = ses.createQuery("update User set userContact =: contact where userId =: id")
 					.setParameter("contact", newContact).setParameter("id", uId).executeUpdate();
 			ses.getTransaction().commit();
-			return res;
+
+		} catch (GlobalException e) {
+			// TODO Auto-generated catch block
+			log.info(e.getMessage());
 		}
+		return res;
 	}
 
 	// METHOD 5
 	// TO CHANGE PASSWORD OF USER PROFILE
 	@Override
-	public int changePassWord(int uId, String oldPswrd, String newPswrd) throws GlobalException {
+	public int changePassWord(int uId, String oldPswrd, String newPswrd) {
 		// TODO Auto-generated method stub
+		int status = 0;
 		try (Session ses = HibernateUtil.getSession()) {
 			ses.beginTransaction();
 			User u = ses.get(User.class, uId);
@@ -105,21 +120,26 @@ public class UserDaoImpl implements UserDao {
 				// UPDATING NEW PASSWORD OF USER PROFILE
 				else {
 					// UPDATING PASSWORD
-					int status = ses.createQuery("update User set userPassword =: newPwd where userId =: id")
+					status = ses.createQuery("update User set userPassword =: newPwd where userId =: id")
 							.setParameter("newPwd", newPswrd).setParameter("id", uId).executeUpdate();
 					ses.getTransaction().commit();
-					return status;
+
 				}
 			} else {
 				throw new GlobalException("Wrong Password!!!");
 			}
+		} catch (GlobalException e) {
+			// TODO Auto-generated catch block
+			log.info(e.getMessage());
 		}
+		return status;
 	}
 
 	// METHOD 6
 	@Override
-	public int payRent(int uId, int amount) throws GlobalException {
+	public int payRent(int uId, int amount) {
 
+		int rent = 0;
 		try (Session ses = HibernateUtil.getSession()) {
 			ses.beginTransaction();
 			User u = ses.get(User.class, uId);
@@ -130,13 +150,17 @@ public class UserDaoImpl implements UserDao {
 			if (u == null)
 				// THROWING EXCEPTION IF USER NOT PRESENT IN DATABASE
 				throw new GlobalException("User not found !!!");
-			int rent = u.getUserRent();
+			rent = u.getUserRent();
 			rent = rent - amount;
 			// UPDATING DUE AMOUNT BASED ON AMOUNT IS PAID
 			ses.createQuery("update User set userRent =: rent where userId =: id").setParameter("rent", rent)
 					.setParameter("id", uId).executeUpdate();
 			ses.getTransaction().commit();
-			return rent;
+
+		} catch (GlobalException e) {
+			// TODO Auto-generated catch block
+			log.info(e.getMessage());
 		}
+		return rent;
 	}
 }
