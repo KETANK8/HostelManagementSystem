@@ -12,7 +12,6 @@
 package com.hostelms;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertAll;
 
 import java.util.Set;
 
@@ -48,9 +47,9 @@ public class LoginRegTest {
 
 	}
 
-	// TEST 1
+	// TEST 1.1
 	@Test
-	@DisplayName("REGISTRATION TESTING")
+	@DisplayName("POSITIVE-REGISTRATION TESTING")
 	void registrationTest() {
 
 		// CREATING USER OBJECT THAT ALREADY EXIST IN DATABASE
@@ -62,15 +61,6 @@ public class LoginRegTest {
 		a.setUserContact("9876543219");
 		a.setUserAddress("Delhi");
 
-		// CREATING NEW USER OBJECT
-		UserDTO b = new UserDTO();
-		b.setFirstName("Rohit");
-		b.setLastName("Sharma");
-		b.setUserName("RS");
-		b.setUserPassword("R123");
-		b.setUserContact("9876543219");
-		b.setUserAddress("Delhi");
-
 		// Checking Validation to Set Unique UserName
 		// Checking Validation to Set Unique Password
 		// Checking Validation to Set Contact Number
@@ -78,15 +68,34 @@ public class LoginRegTest {
 		// POSITIVE TEST CASE
 		assertEquals(0, constraintViolations.size());
 
-		Set<ConstraintViolation<UserDTO>> constraintViolations2 = validator.validate(b);
-		// NEGATIVE TEST CASE
-		assertEquals(0, constraintViolations2.size());
 
 	}
+	// TEST 1.2
+		@Test
+		@DisplayName("NEGATIVE-REGISTRATION TESTING")
+		void registrationTest2() {
 
-	// TEST 2
+			// CREATING NEW USER OBJECT
+			UserDTO b = new UserDTO();
+			b.setFirstName("Rohit");
+			b.setLastName("Sharma");
+			b.setUserName("RS");
+			b.setUserPassword("R123");
+			b.setUserContact("9876543219");
+			b.setUserAddress("Delhi");
+
+			// Checking Validation to Set Unique UserName
+			// Checking Validation to Set Unique Password
+			// Checking Validation to Set Contact Number
+
+			Set<ConstraintViolation<UserDTO>> constraintViolations2 = validator.validate(b);
+			// NEGATIVE TEST CASE
+			assertEquals(0, constraintViolations2.size());
+
+		}
+	// TEST 2.1
 	@Test
-	@DisplayName("LOGIN TESTING")
+	@DisplayName("POSITIVE-LOGIN TESTING")
 	void loginTest() throws GlobalException {
 
 		// CREATING DAO OBJECT OF HOSTEL MS
@@ -101,18 +110,35 @@ public class LoginRegTest {
 
 		// FETCHING SAME USER FROM DATABASE USING DAO OBJECT AND PRIMARY KEY
 		User a = dao.Login("KetanK", "K12345@");
-		//FETCHING SAME USER WITH WRONG ENTRY OF DATA
-		User b =  dao.Login("KetanKumar", "K123456");
 
-		assertAll(
 				// POSITIVE TEST CASE
 				// TESTING TO COMPARE IF BOTH USER OBJECT IS SAME
 				// EXPECTING SAME RESULT
-				() -> assertEquals(u.toString(), a.toString()),
+				assertEquals(u.toString(), a.toString());
+	}	
+	// TEST 2
+		@Test
+		@DisplayName("NEGATIVE-LOGIN TESTING")
+		void loginTest2() throws GlobalException {
 
-				// NEGATIVE TEST CASE
-				// TESTING TO LOGIN USING WRONG USERNAME AND PASSWORD IN LOGIN METHOD
-				// EXPECTING METHOD TO THROW AN EXCEPTION
-				() -> assertEquals(u.toString(), b.toString()));
-	}
+			// CREATING DAO OBJECT OF HOSTEL MS
+			HostelMSDao dao = new HostelMSDaoImpl();
+
+			// CREAYTING SESSION OBJECT
+			Session ses = HibernateUtil.getSession();
+
+			// CREATING TWO USER OBJECT
+			// FETCHING USER FROM DATA USING SESSION OBJECT
+			User u = ses.get(User.class, 1);
+
+			//FETCHING SAME USER WITH WRONG ENTRY OF DATA
+			User b =  dao.Login("KetanKumar", "K123456");
+
+			
+					// NEGATIVE TEST CASE
+					// TESTING TO LOGIN USING WRONG USERNAME AND PASSWORD IN LOGIN METHOD
+					// EXPECTING METHOD TO THROW AN EXCEPTION
+					assertEquals(u.toString(), b.toString());
+		}
+	
 }
